@@ -3,7 +3,39 @@
     <head>
         <title>Google Maps Store Locator</title>
         <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+        <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
+        <div class="title">Store Locator</div>
+        <div class="search-container">
+                <div class="search">
+                    <input id="zip-code-input" type="text" placeholder="Enter zip">
+                    <i class="fas fa-search" onclick="searchStores()"></i>
+                </div> 
+        </div>
+        <div class="store-list-container">
+            <div class="stores-list">
+                <div class="store-container">
+                    <div class="store-container-background">
+                        <div class="store-info-container">
+                            <div class="store-address">
+                                <span>257 S. La Cienega Blvd.</span>
+                                <span>Beverly Hills, CA 90211</span>
+                            </div>
+                            <div class="store-phone-number">234-4534-234</div>
+                        </div>
+                        <div class="store-number-container">
+                            <div class="store-number">1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div id="map" ></div>
+        <script src="js/store-data.js"></script>
+        <script src="js/index.js"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+        </script>
     </body>
 </html>

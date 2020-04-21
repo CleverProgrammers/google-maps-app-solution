@@ -1,28 +1,13 @@
-# Plan Of Action
+# Google Maps App
 
-- Import Google Maps into the Window
+## Requirements
 
-- Add the header `Store Locator` 
+1. Retrieve your own Google Maps API Key (it is free)
 
-- Add markers of stores to the map
+    https://youtu.be/1voXqu4HN9U
 
-- Add info window with name of store to each marker
-
-- Add input box
-
-- Add store list container
-
-- Add individual store container
-
-- Show all the stores in the stores list using `store-data.js`
-
-- Open the info window of the marker on store selection in stores list 
-
-- Complete the styling for the marker info window
-
-- Allow a user to search for stores in a zip code
-
-- Add a beautiful transition on the hover of an individual store
-
-**DONE**
-
+2. Add your API Key to Google Maps link in `index.html`:
+````
+src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+````
+Replace `YOUR_API_KEY` in the url with the API Key you retrieved using the tutotial above.
